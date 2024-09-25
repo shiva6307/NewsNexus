@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+     <nav>
+      <div class="logo">NewsNexus</div>
+      <ul class="nav-links">
+        <li class="category-tab" data-category="general"><a href="#home">Home</a></li>
+        <li class="category-tab" data-category="general"><a href="#">World</a></li>
+        <li class="category-tab" data-category="technology"><a href="#">Technology</a></li>
+        <li class="category-tab" data-category="entertainment"><a href="#">Entertainment</a></li>
+        <li class="category-tab" data-category="sports"><a href="#">Sports</a></li>
+        <li>
+          <input type="text" id="search-input" placeholder="Search news..." />
+          <button id="search-button">Search</button>
+        </li>
+      </ul>
+      
+    </nav> 
+
+    
+      
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Stay Updated with the Latest News</h1>
+      <p>Your daily source for the most trending news from around the world.</p>
+    </section>
+
+    <!-- News Articles Section -->
+    <section id="news-section">
+      <h2 id="news-category-title">Top Headlines</h2>
+      <div class="news-container" id="news-container">
+        <!-- News articles will be displayed here -->
+      </div>
+
+      <!-- Pagination Controls -->
+      <div id="pagination-controls">
+        <button id="prev-page" disabled>Previous</button>
+        <span id="current-page">Page 1</span>
+        <button id="next-page">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 News Website. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
